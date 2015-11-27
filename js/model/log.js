@@ -1,5 +1,6 @@
 /**
  * Created by Max Bilbow on 23/11/2015.
+ * TODO: Make this useful
  */
 define(['model/cookies','service/pub-sub'],function($c,$ps){
 
