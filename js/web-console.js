@@ -34,7 +34,7 @@ require(['jquery', 'view/web-console', 'service/pub-sub'], function ($, $wc, $ps
                     if (wsHelper().decoder) {
                         terminal.console.log('Decoder already exists.');
                     } else {
-                        require(['service/log-decoder'], function (Decoder) {
+                        require(['service/json-decoder'], function (Decoder) {
                             wsHelper().decoder = new Decoder();
                             terminal.console.log('Decoder added');
                             $ps.pub('Decoder');
